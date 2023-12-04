@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+ /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Global styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #f8f9fa; /* Bootstrap default background color */
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-body-emphasis {
+  color: #007bff; /* Bootstrap default primary color */
+}
+
+.nav-pills {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #495057; /* Bootstrap default text color */
+}
+
+.nav-link.active {
+  color: #007bff; /* Bootstrap default active link color */
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-pills {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
+
+ </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="stylesheet" href="/project2/style.css">
+  <title>tunisian blog</title>
+</head>
+
+
+  <header class="d-flex flex-wrap py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Tunisian Blog</span>
+    </a>
+
+    <ul class="nav nav-pills " >
+      <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+
+      <li class="nav-item"><a href="mailto:achrefmagry@gmail.com" class="nav-link active" aria-current="page">Contact</a></li>
+    </ul>
+  </header>
